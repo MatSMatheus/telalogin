@@ -1,25 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <title>Você está na página de login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tela de Login</title>
 </head>
-
 <body>
-  <h1>Esta é a tela de Login</h1>
+  <div class = "login">
+    <h1>Login</h1>
+    <form>
+      <p>Usuário</p>
+      <input type="text" name="" placeholder="Insira o seu nome de usuário">
+      <p>Senha</p>
+      <input type="password" name="" placeholder="Insira a sua senha">
+      <input type="submit" value="Login">
+      <a href="#">Esqueceu sua senha?</a><br>
+      <a href="#">Ainda não possui conta?</a>
 
-  {{> hello}}
-  {{> info}}
+    </form>
+  </div>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
+</html>
